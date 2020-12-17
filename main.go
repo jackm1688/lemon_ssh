@@ -146,7 +146,7 @@ func cmdCase() {
 func userExec(users []model.User) {
 	if enable {
 		var wg sync.WaitGroup
-		userPool := make(chan model.User, num)
+		taskPool := make(chan model.User, num)
 		wg.Add(1)
 		//producer
 		go func(pool chan<- model.User) {
@@ -154,10 +154,10 @@ func userExec(users []model.User) {
 			for _, v := range users {
 				pool <- v
 			}
-			close(userPool)
-		}(userPool)
+			close(taskPool)
+		}(taskPool)
 
-		for v := range userPool {
+		for v := range taskPool {
 			wg.Add(1)
 			go func(u model.User) {
 				defer wg.Done()

@@ -33,3 +33,32 @@ go run main.go <br>
         -u <username><br>
   -use<br>
         -use 使用案列<br>
+
+<br><br>
+Golang 支持在一个平台下生成另一个平台可执行程序的交叉编译功能。<br>
+Mac下编译Linux, Windows平台的64位可执行程序：<br>
+<br><br>
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build test.go<br>
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build test.go<br>
+Linux下编译Mac, Windows平台的64位可执行程序：<br>
+<br>
+CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build test.go<br>
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build test.go<br>
+Windows下编译Mac, Linux平台的64位可执行程序：<br>
+
+SET CGO_ENABLED=0<br>
+SET GOOS=darwin3<br>
+SET GOARCH=amd64<br>
+go build test.go<br>
+
+SET CGO_ENABLED=0<br>
+SET GOOS=linux<br>
+SET GOARCH=amd64<br>
+go build test.go<br>
+GOOS：目标可执行程序运行操作系统，支持 darwin，freebsd，linux，windows<br>
+GOARCH：目标可执行程序操作系统构架，包括 386，amd64，arm<br>
+
+Golang version 1.5以前版本在首次交叉编译时还需要配置交叉编译环境：
+
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 ./make.bash
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 ./make.bash
