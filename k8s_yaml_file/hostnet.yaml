@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hostnet
+  namespace: test
+spec:
+  containers:
+    - name: hostnet
+      image: gdsz.harbor.com/library/busybox:1.28.4
+      args:
+        - /bin/sh
+        - -c 
+        - sleep 30000  
+  hostNetwork: true    

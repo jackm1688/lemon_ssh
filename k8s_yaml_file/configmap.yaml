@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: myconfigmap
+data:
+  config1: xxxx
+  config2: yyyy
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: configmap
+spec:
+  containers:
+    - image: gdsz.harbor.com/library/busybox:1.28.4
+      name: configmap
+      args:
+        - /bin/sh
+        - -c 
+        - sleep 30000
+      volumeMounts:
+        - name: configmap
+          mountPath: /etc/configmap
+          readOnly: true
+  volumes:
+    - name: configmap
+      configMap:
+        name: myconfigmap

@@ -1,0 +1,28 @@
+Usage of ./ssh_tool_mac:
+  -P int
+          -P <port> (default 22)
+	  -c string
+	          -c <cmd1;cmdN>
+			    -e    -e default false
+				  -f string
+				          -f ip.json.list 指定IP列表文件
+						    -h string
+							        -h <host|host1,hostN>
+									  -k string
+									          -k /root/.ssh/id_rsa
+											    -l    -l 开启生成IP列表功能
+												  -n int
+												          -n <1-10> thread num(n >=1 and n <=10) default 1 (default 1)
+	  -p string
+	          -p <password>
+			    -r string
+				        -r <cmd|shell|scp> 指定运行模式
+						  -t int
+						          -t <timeout> default 15s (default 15)
+	  -u string
+	          -u <username>
+			    -use
+				        -use 使用案列
+
+
+

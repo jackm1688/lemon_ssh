@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: rs-demo
+  namespace: test
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: rs-demo
+  template:
+    metadata:
+      labels:
+        app: rs-demo
+    spec:
+      containers:
+        - name: myapp
+          # image: gdsz.harbor.com/experimental_images/nginx:v1
+          image: gdsz.harbor.com/experimental_images/httpd:latest
+          ports:
+            - name: http
+              containerPort: 80

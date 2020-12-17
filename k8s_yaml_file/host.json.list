@@ -1,0 +1,4 @@
+{"user": "root","password":"abc-123","host":"192.168.0.50","port":22,"cmd":"pwd;sleep 5","timeout":15}
+{"user": "root","password":"abc-123","host":"192.168.0.51","port":22,"cmd":"date;sleep 5","timeout":15}
+{"user": "root","password":"abc-123","host":"192.168.0.52","port":22,"cmd":"who;sleep 5","timeout":15}
+

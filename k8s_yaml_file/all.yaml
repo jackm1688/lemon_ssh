@@ -1,0 +1,84 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-sql-svc
+  namespace: dev
+spec:
+  selector:
+    app: my-sql
+  ports:
+    - name: mysql
+      port: 3306
+      targetPort: mysql
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: my-sql
+  namespace: dev
+type: Opaque
+data:
+  mysql-root-password: cm9vdA==
+  mysql-password: cGFzc3dvcmQgLW4K
+
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: mysql-claim
+  namespace: dev
+  annotations:
+    volume.beta.kubernetes.io/storage-class: "managed-nfs-storage"
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 4Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-sql
+  labels:
+    app: my-sql
+  namespace: dev
+spec:
+  selector:
+    matchLabels:
+      app: my-sql
+  template:
+    metadata:
+      labels:
+        app: my-sql
+    spec:
+      containers:
+       - name: my-sql
+         image: gdsz.harbor.com/experimental_images/mysql:5.7
+         env:
+           - name: MYSQL_ROOT_PASSWORD
+             valueFrom:
+               secretKeyRef:
+                 name: my-sql
+                 key: mysql-root-password
+           - name: MYSQL_PASSWORD
+             valueFrom:
+               secretKeyRef:
+                 name: my-sql
+                 key: mysql-password
+           - name: MYSQL_USER
+             value: ""
+           - name: MYSQL_DATABASE
+             value: ""
+         ports:
+           - name: mysql
+             containerPort: 3306
+         volumeMounts:
+           - name: data
+             mountPath: /var/lib/mysql
+      volumes:
+      - name: data
+        persistentVolumeClaim:
+          claimName: mysql-claim
+

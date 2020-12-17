@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: liveness-http
+  labels:
+    test: liveness-http
+  namespace: test
+spec:
+  containers:
+    - name: liveness-http
+      image: gdsz.harbor.com/experimental_images/nginx:v1
+      ports:
+        - name: http
+          containerPort: 80
+      lifecycle:
+        postStart:
+          exec:
+            command: ["/bin/sh","-c"," echo Healthy > /usr/local/nginx/html/healthz"]
+      livenessProbe:
+        httpGet:
+          path: /healthz
+          port: http
+          scheme: HTTP
+        initialDelaySeconds: 10
+        periodSeconds: 3

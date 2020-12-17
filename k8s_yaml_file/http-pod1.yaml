@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: http-pod1
+  namespace: test
+spec:
+  containers:
+    - name: http-pod1
+      image:  gdsz.harbor.com/experimental_images/httpd:latest
+      imagePullPolicy: Always
+      ports:
+        - name: http
+          containerPort: 80
+          protocol: TCP

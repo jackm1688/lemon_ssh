@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: busybox2
+spec:
+  selector:
+    matchLabels:
+      app: busybox2
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: busybox2
+    spec:
+      containers:
+        - name: busybox2
+          image: gdsz.harbor.com/library/busybox:latest
+          args:
+            - /bin/sh
+            - -c
+            - echo date; sleep 10; exit 1  
+

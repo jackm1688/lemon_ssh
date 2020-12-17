@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: daemon-test
+spec:
+  template:
+    labels:
+      app: daemon-set
+    selector:
+      matchLabels:
+        app: daemon-set
+  spec:
+    - name: daemon-set
+      image: gdsz.harbor.com/experimental_images/nginx:v1
+        

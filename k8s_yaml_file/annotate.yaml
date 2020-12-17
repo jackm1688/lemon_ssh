@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: annotate
+  namespace: test
+  annotations:
+    create-by: lemon admin
+    create-at: 2020-11-14 08:57:40
+spec:
+  containers:
+    - name: annotate
+      image: gdsz.harbor.com/library/busybox:1.28.4
+      command: ["/bin/sh","-c","sleep 30000"]

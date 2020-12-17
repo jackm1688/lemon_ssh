@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job-multi
+  namespace: test
+spec:
+  completions: 5
+  parallelism: 2
+  template:
+    spec:
+      containers:
+        - name: job-multi
+          image: gdsz.harbor.com/library/busybox:1.28.4
+          command: ["/bin/sh","-c","sleep 120"]
+      restartPolicy: OnFailure   
+

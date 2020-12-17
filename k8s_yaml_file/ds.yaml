@@ -1,0 +1,19 @@
+INFO 2020/11/05 12:13:53 【root@192.168.0.80:22】 - CMD:kubectl get daemonset -n kube-system kube-flannel-ds-amd64 -o yaml - status:OK - result:
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  labels:
+    app: nginx-dset
+  name: nginx-dset
+spec:
+  selector:
+    matchLabels:
+      app: nginx-dset
+  template:
+    metadata:
+      labels:
+        app: nginx-dset
+    spec:
+     containers:
+     - name: nginx-dset
+       image: gdsz.harbor.com/experimental_images/nginx:v1

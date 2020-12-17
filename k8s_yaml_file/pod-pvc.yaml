@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypods
+spec:
+  containers:
+    - name: mypod1
+      image: gdsz.harbor.com/library/busybox:1.28.4
+      args:
+        - /bin/sh
+        - -c 
+        - touch /mydata1/mypod1;sleep 30000
+      volumeMounts:
+        - mountPath: /mydata1
+          name: mydata1
+    - name: mypod2
+      image: gdsz.harbor.com/library/busybox:1.28.4
+      args:
+        - /bin/sh
+        - -c
+        - touch /mydata2/mypod2; sleep 30000  
+      volumeMounts:
+        - mountPath: /mydata2
+          name: mydata2
+  volumes:
+    - name: mydata1
+      persistentVolumeClaim:
+        claimName: mypvc1
+    - name: mydata2
+      persistentVolumeClaim:
+        claimName: mypvc2

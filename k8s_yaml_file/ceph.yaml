@@ -1,0 +1,15 @@
+apiVersion: v1
+metadata:
+  name: using-ceph
+spec:
+  containers:
+    - name: using-ceph
+      image: busybox
+      volumeMouhts:
+        - name: ceph-volume
+          mountPath: /test-ceph
+  volumes:
+    - name: ceph-volume
+      cephfs:
+        - path: /some/path/in/side/cephfs
+          secretFile: "/etc/ceph/admin.secret"

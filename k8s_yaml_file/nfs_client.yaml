@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nfs-client-provisioner
+  labels:
+    app: nfs-client-provisioner
+  # replace with namespace where provisioner is deployed
+  namespace: default
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: nfs-client-provisioner
+  template:
+    metadata:
+      labels:
+        app: nfs-client-provisioner
+    spec:
+      serviceAccountName: nfs-client-provisioner
+      containers:
+        - name: nfs-client-provisioner
+          image: quay.io/external_storage/nfs-client-provisioner:latest
+          volumeMounts:
+            - name: nfs-client-root
+              mountPath: /persistentvolumes
+          env:
+            - name: PROVISIONER_NAME
+              value: lemon/nfs ###这里的供应者名称必须和class.yaml中的provisioner的名称一致，否则部署不成功
+            - name: NFS_SERVER 
+              value: 192.168.0.80 ##这里写NFS服务器的IP地址或者能解析到的主机名
+            - name: NFS_PATH
+              value: /data/volumes/v1 ##这里写NFS服务器中的共享挂载目录（强调：这里的路径必须是目录中最后一层的文件夹，否则部署的应用将无权限创建目录导致Pending）
+      volumes:
+        - name: nfs-client-root
+          nfs:
+            server: 192.168.0.80
+            path: /data/volumes/v1

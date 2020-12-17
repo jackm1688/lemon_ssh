@@ -1,0 +1,40 @@
+{"id":0,"createAt":"2020-11-18 10:31:55","content":"scp namespace.yaml root@k8s-master1:22:/root","md5Value":"d49aef478cc8219cdb1b69e1670a78ea"}
+{"id":0,"createAt":"2020-11-18 10:31:55","content":"kubectl apply -f namespace.yaml ","md5Value":"8b3282c914f9fa76828068ae5f514403"}
+{"id":0,"createAt":"2020-11-18 10:32:45","content":"scp namespace.yaml root@k8s-master1:22:/root","md5Value":"617c2adde9b284e3a2300e0b6eb785fb"}
+{"id":0,"createAt":"2020-11-18 10:32:45","content":"kubectl apply -f namespace.yaml ","md5Value":"dda7a6e2b77cd0d843ca060196b1b551"}
+{"id":0,"createAt":"2020-11-18 11:41:55","content":"scp tomcat-deploy.yaml root@k8s-master1:22:/root","md5Value":"74295b5fe7defd7a90c2044e9ce139cd"}
+{"id":0,"createAt":"2020-11-18 11:41:55","content":"kubectl apply -f tomcat-deploy.yaml ","md5Value":"bc044a322c17af9e35ecf4b9ac1880e8"}
+{"id":0,"createAt":"2020-11-18 11:42:43","content":"scp tomcat-deploy.yaml root@k8s-master1:22:/root","md5Value":"2588e1b0de9a1f07139e6e0d204f300b"}
+{"id":0,"createAt":"2020-11-18 11:42:44","content":"kubectl apply -f tomcat-deploy.yaml ","md5Value":"9c23d437897fccc3e6e8fcc0ec291b96"}
+{"id":0,"createAt":"2020-11-18 11:43:42","content":"scp tomcat-deploy.yaml root@k8s-master1:22:/root","md5Value":"29a38aa970253e974797245ba5884246"}
+{"id":0,"createAt":"2020-11-18 11:43:42","content":"kubectl apply -f tomcat-deploy.yaml ","md5Value":"697940c4b79bec14db8e6d1bce0aadfd"}
+{"id":0,"createAt":"2020-11-18 11:44:18","content":"scp tomcat-deploy.yaml root@k8s-master1:22:/root","md5Value":"82e47d00946132917cbc359186464ea2"}
+{"id":0,"createAt":"2020-11-18 11:44:18","content":"kubectl apply -f tomcat-deploy.yaml ","md5Value":"352b25af38e1653e059907a4daec73f4"}
+{"id":0,"createAt":"2020-11-18 19:42:37","content":"scp tomcat-svc.yaml root@k8s-master1:22:/root","md5Value":"2942107bfbdabbfadc81422237a8f1e3"}
+{"id":0,"createAt":"2020-11-18 19:42:39","content":"kubectl apply -f tomcat-svc.yaml ","md5Value":"435725e67c0c75c440e05ae9a16d7d68"}
+{"id":0,"createAt":"2020-11-18 22:07:28","content":"scp tomcat-deploy.yaml root@k8s-master1:22:/root","md5Value":"cb3f342449be441db813875480c9528b"}
+{"id":0,"createAt":"2020-11-18 22:07:29","content":"kubectl apply -f tomcat-deploy.yaml ","md5Value":"f66f1174154783dbc350294d1bd4f0ab"}
+{"id":0,"createAt":"2020-11-18 22:12:05","content":"scp tomcat-ingress.yaml root@k8s-master1:22:/root","md5Value":"27e079dcaf1a33cb30f0d552d22240b8"}
+{"id":0,"createAt":"2020-11-18 22:12:06","content":"kubectl apply -f tomcat-ingress.yaml ","md5Value":"3b1a29fa8552bebae2afe32936e16500"}
+{"id":0,"createAt":"2020-11-18 22:18:23","content":"scp tomcat-ingress.yaml root@k8s-master1:22:/root","md5Value":"70c2637223be7908bd63833fca6f8c68"}
+{"id":0,"createAt":"2020-11-18 22:18:24","content":"kubectl apply -f tomcat-ingress.yaml ","md5Value":"a2a84f9ba3683406a6acca14c3f15a84"}
+{"id":0,"createAt":"2020-11-19 08:36:29","content":"scp tomcat-ingress.yaml root@k8s-master1:22:/root","md5Value":"ea526c787ad0ddca79b308dd2b3d7f77"}
+{"id":0,"createAt":"2020-11-19 08:36:29","content":"kubectl apply -f tomcat-ingress.yaml ","md5Value":"27876a08ed1cf1b580cdfd3fb5ba86c5"}
+{"id":0,"createAt":"2020-11-19 09:50:47","content":"scp myapp-pod.yaml root@k8s-master1:22:/root","md5Value":"1676d61777548598fd8c478b4c88cfca"}
+{"id":0,"createAt":"2020-11-19 09:50:47","content":"kubectl apply -f  myapp-pod.yaml  ","md5Value":"78389c2f0e3f0ec6349570aa40c9319d"}
+{"id":0,"createAt":"2020-11-19 09:51:22","content":"scp myapp-pod.yaml root@k8s-master1:22:/root","md5Value":"172c5a415142055d77ba1839c05bd07d"}
+{"id":0,"createAt":"2020-11-19 09:51:23","content":"kubectl apply -f  myapp-pod.yaml  ","md5Value":"da25b0bd11330286928d4fb5e81a5589"}
+{"id":0,"createAt":"2020-11-19 10:06:34","content":"kubectl delete -f tomcat-ingress.yaml  ","md5Value":"bc8b370e2b97aacfa423bac157acc7dd"}
+{"id":0,"createAt":"2020-11-19 10:06:46","content":"kubectl delete -f tomcat-svc.yaml  ","md5Value":"0b14adf8b83cc9259e2509a2efc6a163"}
+{"id":0,"createAt":"2020-11-19 10:17:06","content":"scp myapp-pod.yaml root@k8s-master1:22:/root","md5Value":"2ae796ca8a770a747b74c8508d31f182"}
+{"id":0,"createAt":"2020-11-19 10:17:07","content":"kubectl apply -f  myapp-pod.yaml  ","md5Value":"322dcd6d9a2dcc1c81b1dc348767b528"}
+{"id":0,"createAt":"2020-11-19 10:18:05","content":"scp myapp-pod.yaml root@k8s-master1:22:/root","md5Value":"dcc8163cd60f2b222d4728beaeeab679"}
+{"id":0,"createAt":"2020-11-19 10:18:06","content":"kubectl apply -f  myapp-pod.yaml  --force","md5Value":"6e9ed2d8f23166bf73aa6a61b2f79c1f"}
+{"id":0,"createAt":"2020-11-19 10:18:30","content":"scp myapp-pod.yaml root@k8s-master1:22:/root","md5Value":"9229e50c4bff644605937bbcaa4084eb"}
+{"id":0,"createAt":"2020-11-19 10:18:31","content":"kubectl apply -f  myapp-pod.yaml  --force","md5Value":"bef99630ffcee61a0b105a7384861142"}
+{"id":0,"createAt":"2020-11-19 10:18:52","content":"scp myapp-pod.yaml root@k8s-master1:22:/root","md5Value":"8c08c8cf8a31f89b93979234e0024fd2"}
+{"id":0,"createAt":"2020-11-19 10:18:53","content":"kubectl delete -f  myapp-pod.yaml ","md5Value":"94527f526094849c2901b2e8fa219454"}
+{"id":0,"createAt":"2020-11-19 10:19:15","content":"scp myapp-pod.yaml root@k8s-master1:22:/root","md5Value":"f94358a86dcf6b8219c30cb4cf508f84"}
+{"id":0,"createAt":"2020-11-19 10:19:16","content":"kubectl apply -f  myapp-pod.yaml ","md5Value":"94dbe9087aba7c313c86ef1126c26179"}
+{"id":0,"createAt":"2020-11-19 10:21:49","content":"scp myapp-pod.yaml root@k8s-master1:22:/root","md5Value":"89614dab53c5a086c0b029357585de12"}
+{"id":0,"createAt":"2020-11-19 10:21:49","content":"kubectl apply -f  myapp-pod.yaml ","md5Value":"ce25e2afc6607c06107e0b48e00d75af"}

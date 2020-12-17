@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-request
+  labels:
+    test: resource-request
+  namespace: test
+spec:
+  containers:
+    - name: nginx-request
+      image: gdsz.harbor.com/experimental_images/nginx:v1
+      ports:
+        - containerPort: 80
+      resources:
+        requests:
+          memory: "128Mi"
+          cpu: "200m"
+        limits:
+          memory: "130Mi"
+          cpu: "1"

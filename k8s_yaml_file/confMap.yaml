@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sql-cnfigmap
+data:
+  logging.conf: |
+    class: logging.handler.Logging
+    formatter: precise
+    level: INFO
+    filename: test.log

@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: liveness-tcp
+  labels:
+    test: liveness-tcp
+  namespace: test
+spec:
+  containers:
+    - name: liveness-tcp
+      image: gdsz.harbor.com/experimental_images/nginx:v1
+      ports:
+        - name: http
+          containerPort: 80
+      livenessProbe:
+        tcpSocket:
+          port: http
+        initialDelaySeconds: 10
+        periodSeconds: 4

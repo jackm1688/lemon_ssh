@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-mysql-config
+spec:
+  containers:
+    - name: pod-mysql-config
+      image: gdsz.harbor.com/library/busybox:1.28.4
+      args:
+        - /bin/sh
+        - -c
+        - sleep 30000
+      volumeMounts:
+        - name: config-mysql
+          mountPath: /etc/conf
+  volumes:
+    - name: config-mysql
+      configMap:
+        name: mysqlconfigmap
+        items:
+        - key: mysql.conf
+          path: mysql/mysql.conf
+          

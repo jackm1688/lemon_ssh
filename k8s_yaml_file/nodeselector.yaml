@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-selecor
+  namespace: test
+spec:
+  containers:
+    - name: node-selecor
+      image: gdsz.harbor.com/library/busybox:1.28.4
+      command: ["/bin/sh","-c","sleep 300000"]
+  nodeSelector:
+    distype: ssd

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-dev
+spec:
+  selector:
+    matchLabels:
+      app: nginx-dev
+  replicas: 6
+  template:
+    metadata:
+      labels:
+        app: nginx-dev
+    spec:
+      containers:
+        - name: nginx-dev-web
+          image: gdsz.harbor.com/experimental_images/nginx:v1
+      nodeSelector:
+        disktype: ssd

@@ -1,0 +1,334 @@
+{"id":0,"createAt":"2020-11-13 22:12:54","content":"kubectl get pod -n test ","md5Value":"5c867799d681c52efb6a759c4038b3a0"}
+{"id":0,"createAt":"2020-11-13 22:51:54","content":"kubectl get pod -n test ","md5Value":"0590cd5328b89447792573d87382980b"}
+{"id":0,"createAt":"2020-11-13 22:53:54","content":"kubectl get pod -n test ","md5Value":"611ba10d20678e0b460a40805d3835c4"}
+{"id":0,"createAt":"2020-11-13 22:54:54","content":"kubectl get pod -n test ","md5Value":"004b2d3626903107740fea56b31e12b3"}
+{"id":0,"createAt":"2020-11-13 23:59:02","content":"scp busybox.yaml root@k8s-master1:22:/root","md5Value":"01ab1a3a1e6481be9281a3711b862f7b"}
+{"id":0,"createAt":"2020-11-13 23:59:02","content":"kubectl get pod -n test ","md5Value":"1f7003164f9c04865460a9a8621ea45a"}
+{"id":0,"createAt":"2020-11-13 23:38:03","content":"scp busybox.yaml root@k8s-master1:22:/tmp","md5Value":"937b36ed189bfb4a0474ec7733bba4b3"}
+{"id":0,"createAt":"2020-11-13 23:38:03","content":"kubectl get pod -n test ","md5Value":"3bb0181a215c6de27392fe04c9fbf0ed"}
+{"id":0,"createAt":"2020-11-13 23:54:06","content":"kubectl get -f pod-with-label.yaml --show-labels","md5Value":"e53dc36a3345b4d46107aaafc281b02b"}
+{"id":0,"createAt":"2020-11-13 23:57:06","content":"kubectl get -f pod-with-label.yaml --show-labels","md5Value":"8bd0406852bd7b58844478ba495595d8"}
+{"id":0,"createAt":"2020-11-13 23:01:07","content":"kubectl get -f pod-with-label.yaml --show-labels","md5Value":"aeff17b8ea92f61e12aefb93147b8d80"}
+{"id":0,"createAt":"2020-11-13 23:08:28","content":"kubectl get -f pod-with-label.yaml --show-labels","md5Value":"8f0e647006264915742f59fd58233aae"}
+{"id":0,"createAt":"2020-11-13 23:08:35","content":"kubectl get -f pod-with-label.yaml --show-labels","md5Value":"02a8e8ce2e9ebda38f5b1a651af336ba"}
+{"id":0,"createAt":"2020-11-13 23:28:43","content":"scp busybox.yaml root@k8s-master1:22:/tmp","md5Value":"09c5580da33a53a10b77920405e808ed"}
+{"id":0,"createAt":"2020-11-13 23:28:43","content":"kubectl get pod -n test ","md5Value":"6e25c12219d6e2a6b1b4d980c7dcc5b4"}
+{"id":0,"createAt":"2020-11-14 08:30:22","content":"kubetl get pod -l 'env!=qa' -L env","md5Value":"1cc6eee1279cb42210b1fdb8ff66f823"}
+{"id":0,"createAt":"2020-11-14 08:30:35","content":"kubectl get pod -l 'env!=qa' -L env","md5Value":"e192ffdbfa01b38b144dc10fcfdd185f"}
+{"id":0,"createAt":"2020-11-14 08:30:45","content":"kubectl get pod -l 'env!=qa' -L env -n test","md5Value":"791584986c8f5f9c9d2095e23878a7de"}
+{"id":0,"createAt":"2020-11-14 08:31:42","content":"kubeclt get pods -l 'env!=qa,tire=frontend -L env,tire'","md5Value":"56e574c6ec03283417dcaa445099323f"}
+{"id":0,"createAt":"2020-11-14 08:31:59","content":"kubectl get pods -l 'env!=qa,tire=frontend -L env,tire'","md5Value":"b08fa8d29844448f7c3bc7e790203cd3"}
+{"id":0,"createAt":"2020-11-14 08:32:11","content":"kubectl get pods -l 'env!=qa,tire=frontend' -L env,tire","md5Value":"79c0fc5d6a140991e6cfde5521e583d3"}
+{"id":0,"createAt":"2020-11-14 08:32:19","content":"kubectl get pods -l 'env!=qa,tire=frontend' -L env,tire -n test","md5Value":"19e165cf3d27dafb7473ea3bb0d9a059"}
+{"id":0,"createAt":"2020-11-14 08:34:06","content":"kubectl get pod -n test","md5Value":"4b32afa4c952dfc8417c1dd85151321c"}
+{"id":0,"createAt":"2020-11-14 08:34:33","content":"kubectl label pod/client env=dev -n test","md5Value":"5fce55a094b5554da477586df0c8fc31"}
+{"id":0,"createAt":"2020-11-14 08:35:13","content":"kubectl label pod/http-pod1 env=production -n test","md5Value":"6ec8b93c0e269f00286dbcf06b1ed1ab"}
+{"id":0,"createAt":"2020-11-14 08:35:43","content":"kubectl get pod -n test --show-label","md5Value":"cbdfc236d95aea66da3b8f4f7adac9e0"}
+{"id":0,"createAt":"2020-11-14 08:35:45","content":"kubectl get pod -n test --show-labels","md5Value":"99c9e3a8b003c32a15fc4cfd82cd823f"}
+{"id":0,"createAt":"2020-11-14 08:36:30","content":"kubeclt get pods -l env in(production,dev) -L env ","md5Value":"91fb458ddecd1ff2670f4624a531a7f8"}
+{"id":0,"createAt":"2020-11-14 08:36:45","content":"kubeclt get pods -l 'env in(production,dev)' -L env ","md5Value":"e806f28257b833bcfb98c8efc2e937cf"}
+{"id":0,"createAt":"2020-11-14 08:36:55","content":"kubectl get pods -l 'env in(production,dev)' -L env ","md5Value":"9c08fa2618a5d828f238250462859cc8"}
+{"id":0,"createAt":"2020-11-14 08:37:00","content":"kubectl get pods -l 'env in(production,dev)' -L env -n test ","md5Value":"315ed95ad31e18b1ec844882480a62fa"}
+{"id":0,"createAt":"2020-11-14 08:42:20","content":"kubectl get nodes -o wide","md5Value":"54abc2514ffa99a7c1803b4543067127"}
+{"id":0,"createAt":"2020-11-14 08:42:50","content":"kubectl label node k8s-node1 distype=ssd","md5Value":"e8ce060c7c674b58fdd04cb208b03527"}
+{"id":0,"createAt":"2020-11-14 08:42:54","content":"kubectl label node k8s-node3 distype=ssd","md5Value":"120818ba59b1fc47d07541177ec1598f"}
+{"id":0,"createAt":"2020-11-14 08:43:28","content":"kubectl get node -l 'distype' -L distype","md5Value":"8d8427e2b5d4e9373f92f77280a7b76e"}
+{"id":0,"createAt":"2020-11-14 08:44:11","content":"kubectl get node -l 'distype' -l 'db' -L distype,db","md5Value":"ada1c3dede9dce101b8aee819b0e4ee1"}
+{"id":0,"createAt":"2020-11-14 08:44:28","content":"kubectl get node -l 'distype'  -L distype","md5Value":"dc9fdb57e4781c03811121031c47362b"}
+{"id":0,"createAt":"2020-11-14 08:46:38","content":"scp nodeselector.yaml root@k8s-master1:22:/root","md5Value":"77c7a8be3ae9f5fad936b9387792a490"}
+{"id":0,"createAt":"2020-11-14 08:46:39","content":"kubectl apply -f nodeselector.yaml","md5Value":"73087e1641c5837ebb134f4fdf426b7c"}
+{"id":0,"createAt":"2020-11-14 08:46:51","content":"kubectl get  -f nodeselector.yaml","md5Value":"d045043d6a550963ddc993e5c5a50293"}
+{"id":0,"createAt":"2020-11-14 08:47:31","content":"scp nodeselector.yaml root@k8s-master1:22:/root","md5Value":"588e13dfba7eff8297de0937b2330d84"}
+{"id":0,"createAt":"2020-11-14 08:47:34","content":"kubectl apply -f nodeselector.yaml --force ","md5Value":"3808835dbc30b63d212365b49f441498"}
+{"id":0,"createAt":"2020-11-14 08:47:37","content":"kubectl get  -f nodeselector.yaml","md5Value":"24c340bb3d36681978ce336ff4da5f61"}
+{"id":0,"createAt":"2020-11-14 08:47:49","content":"kubectl get  -f nodeselector.yaml -o wide","md5Value":"db2123bba68b19ba571b7eac52647d5f"}
+{"id":0,"createAt":"2020-11-14 08:51:47","content":"kubectl describe -f nodeselector.yaml ","md5Value":"73d39f661ef72f0a0778f11ae01d40da"}
+{"id":0,"createAt":"2020-11-14 08:52:57","content":"kubectl get pod -n test","md5Value":"9375e747f86f457d665190901bcc2a6e"}
+{"id":0,"createAt":"2020-11-14 08:53:45","content":"kubectl annotate pod client create-by='lemon admin'","md5Value":"bc23079543c28d2fce7ab5ec97e0f82f"}
+{"id":0,"createAt":"2020-11-14 08:53:54","content":"kubectl annotate pod client create-by='lemon admin' -n test","md5Value":"6bcb58e5b551ca9c5a9cfa4784ebfcc8"}
+{"id":0,"createAt":"2020-11-14 08:54:19","content":"kubectl describe pods client","md5Value":"52e778944f4ef994e0b5fe586aedf1f5"}
+{"id":0,"createAt":"2020-11-14 08:54:26","content":"kubectl describe pods client -n test","md5Value":"567ae088d9eb029ca4341fb7094bac65"}
+{"id":0,"createAt":"2020-11-14 08:54:45","content":"kubectl describe pods client -n test |grep Annotations","md5Value":"becd48111c3ab9d8119e065084f5c084"}
+{"id":0,"createAt":"2020-11-14 08:58:16","content":"scp annotate.yaml root@k8s-master1:22:/root","md5Value":"9496f656841aa9404b7a04cfda070e55"}
+{"id":0,"createAt":"2020-11-14 08:58:17","content":"kubectl apply -f annotate.yaml ","md5Value":"10dced240f366e642174c848d850beaf"}
+{"id":0,"createAt":"2020-11-14 08:58:31","content":"kubectl get  -f annotate.yaml ","md5Value":"c463fec1b654ec9c9bab378ee6ed1070"}
+{"id":0,"createAt":"2020-11-14 08:59:00","content":"kubectl describe  -f annotate.yaml  |grep Anno","md5Value":"9fc06a5adf87251ccf42d429e2b19433"}
+{"id":0,"createAt":"2020-11-14 08:59:14","content":"kubectl describe  -f annotate.yaml","md5Value":"bb73be26dc8ccc6f1a95e8a956666e92"}
+{"id":0,"createAt":"2020-11-14 09:23:50","content":"scp init-container.yaml root@k8s-master1:22:/root","md5Value":"6c8a5763694100543eae233090e9e072"}
+{"id":0,"createAt":"2020-11-14 09:23:51","content":"kubectl apply -f init-container.yaml ","md5Value":"ae02691b0031d8193c63280ac2847fe6"}
+{"id":0,"createAt":"2020-11-14 09:24:05","content":"kubectl get -f  init-container.yaml ","md5Value":"93386d912a9ce9664e8601591a5b08d8"}
+{"id":0,"createAt":"2020-11-14 09:24:12","content":"kubectl get -f  init-container.yaml ","md5Value":"36f6ef9c44a82e36586b0926336c2421"}
+{"id":0,"createAt":"2020-11-14 09:24:21","content":"kubectl describe -f  init-container.yaml ","md5Value":"5a214f302864b397375330f8c487e4e1"}
+{"id":0,"createAt":"2020-11-14 09:24:41","content":"kubectl get  -f  init-container.yaml ","md5Value":"1e8b4aca585f55624b2791a965e21b7a"}
+{"id":0,"createAt":"2020-11-14 09:25:27","content":"scp init-container.yaml root@k8s-master1:22:/root","md5Value":"261e3d59ab56e9cbccfafffeb784c22e"}
+{"id":0,"createAt":"2020-11-14 09:25:28","content":"kubectl apply -f init-container.yaml --fore","md5Value":"51487336de2e393e48961d8be9e0ee10"}
+{"id":0,"createAt":"2020-11-14 09:25:38","content":"scp init-container.yaml root@k8s-master1:22:/root","md5Value":"f85c3a7510019e95e0380eecb86b9848"}
+{"id":0,"createAt":"2020-11-14 09:26:11","content":"kubectl apply -f init-container.yaml --force","md5Value":"92bd42be3007bec075f00f0eacd2c651"}
+{"id":0,"createAt":"2020-11-14 09:26:34","content":"kubectl get  -f init-container.yaml","md5Value":"8240daeb26581b02c26ff59e6e59cf44"}
+{"id":0,"createAt":"2020-11-14 09:26:37","content":"kubectl get  -f init-container.yaml","md5Value":"ace8b60441ab85c70e4a082b357372b7"}
+{"id":0,"createAt":"2020-11-14 09:26:39","content":"kubectl get  -f init-container.yaml","md5Value":"bc748dfe72cd3bb30d97fda249db7d58"}
+{"id":0,"createAt":"2020-11-14 09:26:46","content":"kubectl describe  -f init-container.yaml","md5Value":"0a1e608d62b6766de3dd8174fcb9f95e"}
+{"id":0,"createAt":"2020-11-14 09:27:05","content":"kubectl get  -f init-container.yaml","md5Value":"f782495dd52efd589dd61a8e2e7d0344"}
+{"id":0,"createAt":"2020-11-14 09:27:21","content":"kubectl logs -n test init-container","md5Value":"de016a96e831f6889bc8300cb5cbadf6"}
+{"id":0,"createAt":"2020-11-14 09:27:46","content":"scp init-container.yaml root@k8s-master1:22:/root","md5Value":"d6a30c0d6ea8bd6cc755abcb200a7fec"}
+{"id":0,"createAt":"2020-11-14 09:28:25","content":"kubectl apply -f init-container.yaml --force","md5Value":"24c1dbfd78a7a857eb101f2bff316466"}
+{"id":0,"createAt":"2020-11-14 09:28:31","content":"kubectl logs -n test init-container","md5Value":"043a0a7fc50f1ecb26867b96b796c522"}
+{"id":0,"createAt":"2020-11-14 09:28:35","content":"kubectl get  -f init-container.yaml","md5Value":"f5e12d18e41fe3dba416ef9554ecba66"}
+{"id":0,"createAt":"2020-11-14 09:28:37","content":"kubectl get  -f init-container.yaml","md5Value":"3052ccdd1ee41ca99caf645399fea3cf"}
+{"id":0,"createAt":"2020-11-14 09:28:38","content":"kubectl get  -f init-container.yaml","md5Value":"73240501c7f9b7d236f33cfb4e83bb32"}
+{"id":0,"createAt":"2020-11-14 09:28:40","content":"kubectl get  -f init-container.yaml","md5Value":"47530a2bec09c9b6c32b298067521de6"}
+{"id":0,"createAt":"2020-11-14 09:29:02","content":"kubectl get  -f init-container.yaml","md5Value":"6a0eb0af72d99ddae8cca7f7f2f71558"}
+{"id":0,"createAt":"2020-11-14 09:29:05","content":"kubectl get  -f init-container.yaml","md5Value":"054145caa7b83b1ca4767a4653d100fb"}
+{"id":0,"createAt":"2020-11-14 09:35:02","content":"scp post-start.yaml root@k8s-master1:22:/root","md5Value":"f301c8d3d6a7f88ce099ca80f3512215"}
+{"id":0,"createAt":"2020-11-14 09:35:02","content":"kubectl apply  -f post-start.yaml","md5Value":"aaf4d18c69a85aceb9eda755721abb63"}
+{"id":0,"createAt":"2020-11-14 09:35:19","content":"scp post-start.yaml root@k8s-master1:22:/root","md5Value":"e89762f9eccfec2ce25436fbd8655833"}
+{"id":0,"createAt":"2020-11-14 09:35:20","content":"kubectl apply  -f post-start.yaml","md5Value":"f0a97af4b53b5121a363dd8063aa0c19"}
+{"id":0,"createAt":"2020-11-14 09:35:32","content":"scp post-start.yaml root@k8s-master1:22:/root","md5Value":"14cd60bef427fbdce00229e78a5e8ff6"}
+{"id":0,"createAt":"2020-11-14 09:35:32","content":"kubectl apply  -f post-start.yaml","md5Value":"03654987bd97586a9ae79fe0e95c868d"}
+{"id":0,"createAt":"2020-11-14 09:35:45","content":"scp post-start.yaml root@k8s-master1:22:/root","md5Value":"1d685d647c08928fe8d760d55f26efee"}
+{"id":0,"createAt":"2020-11-14 09:35:46","content":"kubectl apply  -f post-start.yaml","md5Value":"f4a87c4084515d587d1e74fcaeadc748"}
+{"id":0,"createAt":"2020-11-14 09:35:56","content":"kubectl get  -f post-start.yaml","md5Value":"fb4e08af0d5be3eda899bafe5a6834c8"}
+{"id":0,"createAt":"2020-11-14 10:02:33","content":"scp liveness-exec.yaml root@k8s-master1:22:/root","md5Value":"193da50bd138e70227b0f20862a626ef"}
+{"id":0,"createAt":"2020-11-14 10:02:33","content":"kubectl get  -f liveness-exec.yaml ","md5Value":"aed5dee62e4478f6f11328f09c69b4f3"}
+{"id":0,"createAt":"2020-11-14 10:02:46","content":"scp liveness-exec.yaml root@k8s-master1:22:/root","md5Value":"6e50b5f93c866385c66b1bc5f9eb6572"}
+{"id":0,"createAt":"2020-11-14 10:02:46","content":"kubectl apply  -f liveness-exec.yaml ","md5Value":"a765374f07abbbc8e8312c4706c09579"}
+{"id":0,"createAt":"2020-11-14 10:03:00","content":"scp liveness-exec.yaml root@k8s-master1:22:/root","md5Value":"7ff19d774ae1bf6ef9cbd166f3d78e45"}
+{"id":0,"createAt":"2020-11-14 10:03:00","content":"kubectl apply  -f liveness-exec.yaml ","md5Value":"546506d5025ddc8a3ab6b10d911b6878"}
+{"id":0,"createAt":"2020-11-14 10:03:11","content":"kubectl get   -f liveness-exec.yaml ","md5Value":"13dc1a3a71b241889971f15f4e57f63d"}
+{"id":0,"createAt":"2020-11-14 10:03:22","content":"kubectl get   -f liveness-exec.yaml ","md5Value":"28b4aae66c8e64e3d65876103e4c0e85"}
+{"id":0,"createAt":"2020-11-14 10:04:25","content":"kubectl get   -f liveness-exec.yaml ","md5Value":"b1c70cd9a30bf229b35555b578cd36ab"}
+{"id":0,"createAt":"2020-11-14 10:04:27","content":"kubectl get   -f liveness-exec.yaml ","md5Value":"a0f92a904235893df91e4a876944faf7"}
+{"id":0,"createAt":"2020-11-14 10:05:24","content":"kubectl describe -n test liveness-exec ","md5Value":"229f5171887ea3221210e85c41986b4d"}
+{"id":0,"createAt":"2020-11-14 10:05:38","content":"kubectl describe pod  -n test liveness-exec ","md5Value":"1037ff03f6164ea52e64ddb01f4dc7a8"}
+{"id":0,"createAt":"2020-11-14 10:05:53","content":"kubectl describe pod  -n test liveness-exec ","md5Value":"d60c7abf14f476e4b1deb9fcca33fc93"}
+{"id":0,"createAt":"2020-11-14 10:07:03","content":"kubectl describe pod  -n test liveness-exec ","md5Value":"32dca7ea741e285d5b5a123cb6066911"}
+{"id":0,"createAt":"2020-11-14 10:07:05","content":"kubectl describe pod  -n test liveness-exec ","md5Value":"2920df7a2e8a3e88ba96534cc98b59f3"}
+{"id":0,"createAt":"2020-11-14 10:07:11","content":"kubectl describe pod  -n test liveness-exec ","md5Value":"601b35d0117b338ab499418929841eec"}
+{"id":0,"createAt":"2020-11-14 10:07:25","content":"kubectl describe pod  -n test liveness-exec ","md5Value":"f2b74dd04909d0990fa91b33f28ea19d"}
+{"id":0,"createAt":"2020-11-14 10:07:31","content":"kubectl describe pod  -n test liveness-exec ","md5Value":"fd7ee0d96044fc89f9ea9bfcf050c38f"}
+{"id":0,"createAt":"2020-11-14 10:07:32","content":"kubectl describe pod  -n test liveness-exec ","md5Value":"3676ade5b283d505d0d116c9b3a51baa"}
+{"id":0,"createAt":"2020-11-14 10:07:37","content":"kubectl describe pod  -n test liveness-exec ","md5Value":"e7cdef11f659497aa15f690b731fddad"}
+{"id":0,"createAt":"2020-11-14 10:07:52","content":"kubectl describe pod  -n test liveness-exec ","md5Value":"467d885ee5aa04fa4b30ad7aa680f4e4"}
+{"id":0,"createAt":"2020-11-14 10:08:05","content":"kubectl get pod -n  ","md5Value":"80de77b48c0db060512b289f3e44800b"}
+{"id":0,"createAt":"2020-11-14 10:08:07","content":"kubectl get pod -n  test ","md5Value":"4dd08e80d3fe8da2470594c8775e948b"}
+{"id":0,"createAt":"2020-11-14 10:08:09","content":"kubectl get pod -n  test ","md5Value":"a7bf70a2fd2802833d3a73c0c897608d"}
+{"id":0,"createAt":"2020-11-14 10:09:30","content":"kubectl describe  pod -n liveness-exec   ","md5Value":"964952807d3eb50dc831e97732f3f85b"}
+{"id":0,"createAt":"2020-11-14 10:09:49","content":"kubectl describe  pod -n test  liveness-exec ","md5Value":"e42f1b799c662b7d6fb6080f63212d99"}
+{"id":0,"createAt":"2020-11-14 10:17:04","content":"scp liveness-http.yaml root@k8s-master1:22:/root","md5Value":"04bf325af17b27832fdd34b50393ae9b"}
+{"id":0,"createAt":"2020-11-14 10:17:05","content":"kubectl apply -f liveness-http.yaml ","md5Value":"7d66f46862293af0a1667bef00fe2cda"}
+{"id":0,"createAt":"2020-11-14 10:17:32","content":"scp liveness-http.yaml root@k8s-master1:22:/root","md5Value":"89af8594fd2fdff4a1aa4c8f66e13058"}
+{"id":0,"createAt":"2020-11-14 10:17:32","content":"kubectl apply -f liveness-http.yaml ","md5Value":"b01c000082194e87960908990557ea13"}
+{"id":0,"createAt":"2020-11-14 10:17:51","content":"scp liveness-http.yaml root@k8s-master1:22:/root","md5Value":"0ea564115793b0d8a123538e2c09a8bf"}
+{"id":0,"createAt":"2020-11-14 10:17:51","content":"kubectl apply -f liveness-http.yaml ","md5Value":"928ae0f68454371fc88f2a623bf0aabf"}
+{"id":0,"createAt":"2020-11-14 10:18:12","content":"scp liveness-http.yaml root@k8s-master1:22:/root","md5Value":"9ec41c098433ad427a5fb9f8ef5fdd33"}
+{"id":0,"createAt":"2020-11-14 10:18:12","content":"kubectl apply -f liveness-http.yaml ","md5Value":"22687b006925339c4b7b63964e3dd92b"}
+{"id":0,"createAt":"2020-11-14 10:18:27","content":"kubectl get  -f liveness-http.yaml ","md5Value":"6926cbf65aebf9a5a3876dd5c2e69c7d"}
+{"id":0,"createAt":"2020-11-14 10:18:30","content":"kubectl get  -f liveness-http.yaml ","md5Value":"6c354e5be659c8240fa12bf11944655e"}
+{"id":0,"createAt":"2020-11-14 10:18:57","content":"kubectl get  -f liveness-http.yaml ","md5Value":"5180a44ef00bea197f4ce4d80a19e1c7"}
+{"id":0,"createAt":"2020-11-14 10:19:03","content":"kubectl describe  -f liveness-http.yaml ","md5Value":"ec49cc90ae0310cbf7f662a8cb4b99f0"}
+{"id":0,"createAt":"2020-11-14 10:28:12","content":"scp liveness-http.yaml root@k8s-master1:22:/root","md5Value":"056c514f4899fcd5e490a1853a8a4a59"}
+{"id":0,"createAt":"2020-11-14 10:28:13","content":"kubectl apply -f liveness-http.yaml ","md5Value":"3d65ad1cd5951b0fe83740a381005a73"}
+{"id":0,"createAt":"2020-11-14 10:28:19","content":"scp liveness-http.yaml root@k8s-master1:22:/root","md5Value":"9de5e385fdb562b81efd8d9da4d1e7de"}
+{"id":0,"createAt":"2020-11-14 10:28:25","content":"kubectl apply -f liveness-http.yaml --force","md5Value":"17f4b0fbaae43a805d703cd612f9dd7d"}
+{"id":0,"createAt":"2020-11-14 10:28:30","content":"kubectl get  -f liveness-http.yaml ","md5Value":"fe0340a4a16534f7059677e3caa72927"}
+{"id":0,"createAt":"2020-11-14 10:28:50","content":"kubectl logs -n test liveness-http ","md5Value":"d95fec7ae3ee354289d8fd1e906134e7"}
+{"id":0,"createAt":"2020-11-14 10:29:02","content":"kubectl logs -n test liveness-http ","md5Value":"620c38c3ef39bd76c628db83af3d8026"}
+{"id":0,"createAt":"2020-11-14 10:29:10","content":"kubectl logs  liveness-http ","md5Value":"a21944f39ad00e01be803835af0b169c"}
+{"id":0,"createAt":"2020-11-14 10:29:16","content":"kubectl logs  liveness-http  -n test","md5Value":"2ec7a2a2ae0d134ad5857dc0ff4065f5"}
+{"id":0,"createAt":"2020-11-14 10:29:54","content":"kubectl delete  -f liveness-http.yaml ","md5Value":"169edb1356dac281f104cef7d818cbfd"}
+{"id":0,"createAt":"2020-11-14 10:30:11","content":"scp liveness-http.yaml root@k8s-master1:22:/root","md5Value":"6985ab87f32704e4868d16402d2c5d72"}
+{"id":0,"createAt":"2020-11-14 10:30:11","content":"kubectl apply -f liveness-http.yaml ","md5Value":"371753984b11043db5d80950f95acd66"}
+{"id":0,"createAt":"2020-11-14 10:30:25","content":"kubectl get  -f liveness-http.yaml ","md5Value":"983100a14de243e95337a2de7e36877c"}
+{"id":0,"createAt":"2020-11-14 10:30:37","content":"kubectl describe  -f liveness-http.yaml ","md5Value":"60be4e7202cb00b99565964ed61c3ae9"}
+{"id":0,"createAt":"2020-11-14 10:30:49","content":"kubectl get  -f liveness-http.yaml ","md5Value":"96ac5c3a38774f85d81d3fc69a8ec6f9"}
+{"id":0,"createAt":"2020-11-14 10:31:31","content":"kubectl get  -f liveness-http.yaml ","md5Value":"0d9c27ef4dd54ccd8b5e5bb7f3054f63"}
+{"id":0,"createAt":"2020-11-14 10:31:34","content":"kubectl get  -f liveness-http.yaml ","md5Value":"7b0b9c53b2039ceacd1de99e16b0c1a1"}
+{"id":0,"createAt":"2020-11-14 10:31:36","content":"kubectl get  -f liveness-http.yaml ","md5Value":"8e238550751043e8a8b46fcb808d3c45"}
+{"id":0,"createAt":"2020-11-14 10:31:40","content":"kubectl get  -f liveness-http.yaml ","md5Value":"ddd8ddf25e6c8f6a1cede01d4c2559a5"}
+{"id":0,"createAt":"2020-11-14 10:32:05","content":"kubectl get  -f liveness-http.yaml ","md5Value":"a8c18f2d2938f0e8aca4782b85c9e40a"}
+{"id":0,"createAt":"2020-11-14 10:37:19","content":"kubectl describe  -f liveness-http.yaml ","md5Value":"d041a1713d7056f8c16e0829c3e00305"}
+{"id":0,"createAt":"2020-11-14 10:45:37","content":"scp liveness-tcp.yaml root@k8s-master1:22:/root","md5Value":"5b90033d5bd1b7962e9c734c562eb9e4"}
+{"id":0,"createAt":"2020-11-14 10:45:39","content":"kubectl apply  -f liveness-tcp.yaml ","md5Value":"ce084600bedcf864909b3a213784a4a1"}
+{"id":0,"createAt":"2020-11-14 10:45:51","content":"kubectl get   -f liveness-tcp.yaml ","md5Value":"c446054eaec028c73a33352a2d7c61c0"}
+{"id":0,"createAt":"2020-11-14 10:47:21","content":"kubectl get   -f liveness-tcp.yaml ","md5Value":"735609959cf38f3523cf56d071aff488"}
+{"id":0,"createAt":"2020-11-14 10:47:28","content":"kubectl get   -f liveness-tcp.yaml ","md5Value":"0866825c88c8ae15894f933b6b98d924"}
+{"id":0,"createAt":"2020-11-14 11:08:39","content":"scp readiness-http.yaml root@k8s-master1:22:/root","md5Value":"5539477581e928417a584a869d4724ec"}
+{"id":0,"createAt":"2020-11-14 11:08:40","content":"kubectl get   -f readiness-http.yaml ","md5Value":"18672ce6bbeb622f90f80a815312e6c0"}
+{"id":0,"createAt":"2020-11-14 11:09:03","content":"scp readiness-http.yaml root@k8s-master1:22:/root","md5Value":"3b6f9091eec387c0aff996c971cb30d8"}
+{"id":0,"createAt":"2020-11-14 11:09:03","content":"kubectl apply  -f readiness-http.yaml ","md5Value":"ffd5f26fe47408c419ec25c66e35f5a5"}
+{"id":0,"createAt":"2020-11-14 11:09:34","content":"scp readiness-http.yaml root@k8s-master1:22:/root","md5Value":"89227357d3bea101e2236b4770a1bce1"}
+{"id":0,"createAt":"2020-11-14 11:09:35","content":"kubectl apply  -f readiness-http.yaml ","md5Value":"f05ad5194a3d568d97d26eb21e675a44"}
+{"id":0,"createAt":"2020-11-14 11:09:50","content":"scp readiness-http.yaml root@k8s-master1:22:/root","md5Value":"e39d2a8181c42e861633dc44920c89a4"}
+{"id":0,"createAt":"2020-11-14 11:09:51","content":"kubectl apply  -f readiness-http.yaml ","md5Value":"ee13ee7ef8237efb1214e20e4d3f94fe"}
+{"id":0,"createAt":"2020-11-14 11:12:03","content":"kubectl descrbie  readiness-http.yaml ","md5Value":"489c284e18c96d58a444b4e8950884d3"}
+{"id":0,"createAt":"2020-11-14 11:12:08","content":"kubectl descrbie -f  readiness-http.yaml ","md5Value":"8b4fd4fb9dc745d034e30784e8e75304"}
+{"id":0,"createAt":"2020-11-14 11:12:16","content":"kubectl describe -f  readiness-http.yaml ","md5Value":"8feb1e337197e618bc6408cc44a58327"}
+{"id":0,"createAt":"2020-11-14 11:12:34","content":"kubectl describe -f  readiness-http.yaml ","md5Value":"c2c57d472ad5f6c90a20167cc6ff1d27"}
+{"id":0,"createAt":"2020-11-14 11:13:08","content":"kubectl get pod -n test ","md5Value":"5b7b11b10e0b21a59c4f23f85ed59f64"}
+{"id":0,"createAt":"2020-11-14 11:13:26","content":"kubectl get pod -l test=readiness-http -n test ","md5Value":"59e75376ec4fc7462d854ca2f6558a8d"}
+{"id":0,"createAt":"2020-11-14 11:23:45","content":"scp cpu_mem_request.yaml root@k8s-master1:22:/root","md5Value":"c4aaea1641ebe22fce9140d87d28cbb7"}
+{"id":0,"createAt":"2020-11-14 11:23:46","content":"kubectl apply -f cpu_mem_request.yaml  ","md5Value":"61c72d55a6a2a4e5492943e50a5cf416"}
+{"id":0,"createAt":"2020-11-14 11:31:44","content":"scp cpu_mem_request.yaml root@k8s-master1:22:/root","md5Value":"12225664787ed6d44faa82f8e2b3174f"}
+{"id":0,"createAt":"2020-11-14 11:31:54","content":"kubectl apply -f cpu_mem_request.yaml --force ","md5Value":"b80cb667d6f678019d25c66248186b70"}
+{"id":0,"createAt":"2020-11-14 11:32:32","content":"scp cpu_mem_request.yaml root@k8s-master1:22:/root","md5Value":"d4b96c3990255493dff6768b3d8a667a"}
+{"id":0,"createAt":"2020-11-14 11:32:35","content":"kubectl apply -f cpu_mem_request.yaml --force ","md5Value":"1c56e13780354f1382b997c1d41d6ab0"}
+{"id":0,"createAt":"2020-11-16 09:16:14","content":"kubectl get pods -n test","md5Value":"e030e2975c879f838ba85af8538399a6"}
+{"id":0,"createAt":"2020-11-16 09:16:32","content":"kubectl get rs -n test","md5Value":"5977328f822dd83bde7740decf2179ef"}
+{"id":0,"createAt":"2020-11-16 09:17:39","content":"scp pod-template.yaml root@k8s-master1:22:/root","md5Value":"5cfb98283df0ed4af220800a22a47227"}
+{"id":0,"createAt":"2020-11-16 09:17:40","content":"kubectl apply -f pod-template.yaml ","md5Value":"4b775e32e44a6c7adf8504d6a905f9fe"}
+{"id":0,"createAt":"2020-11-16 09:17:52","content":"scp pod-template.yaml root@k8s-master1:22:/root","md5Value":"081af1ec8ba13680f2147b5edc47b395"}
+{"id":0,"createAt":"2020-11-16 09:17:53","content":"kubectl apply -f pod-template.yaml ","md5Value":"9d4d625a8a878c13a3736ef3614da73c"}
+{"id":0,"createAt":"2020-11-16 09:18:23","content":"scp pod-template.yaml root@k8s-master1:22:/root","md5Value":"8f87172c784d2d8e0b8dfe3ec2f41024"}
+{"id":0,"createAt":"2020-11-16 09:18:23","content":"kubectl apply -f pod-template.yaml ","md5Value":"05020bb6aecb96de978ac23ee266c4d9"}
+{"id":0,"createAt":"2020-11-16 09:18:29","content":"kubectl get rs -n test","md5Value":"c37e9bd9c1f985245133825fcd743d93"}
+{"id":0,"createAt":"2020-11-16 09:18:50","content":"kubectl get rs -o wide -n test","md5Value":"b348fed307e7b2e5715a822390022824"}
+{"id":0,"createAt":"2020-11-16 09:18:58","content":"kubectl get pod -o wide -n test","md5Value":"8859aad9d31d8a0f3d6172d6519d9159"}
+{"id":0,"createAt":"2020-11-16 09:19:18","content":"scp pod-template.yaml root@k8s-master1:22:/root","md5Value":"0df3fbde69af5426231fd7432d5b9373"}
+{"id":0,"createAt":"2020-11-16 09:19:18","content":"kubectl apply -f pod-template.yaml ","md5Value":"929f3b4d11ba61091c8007910b6b5800"}
+{"id":0,"createAt":"2020-11-16 09:19:24","content":"kubectl get rs -o wide -n test","md5Value":"f0f0c92ea0b95328592c52d254f16a2e"}
+{"id":0,"createAt":"2020-11-16 09:19:29","content":"kubectl get pod -o wide -n test","md5Value":"518d60151e3b6283fa816168b927391e"}
+{"id":0,"createAt":"2020-11-16 09:19:50","content":"scp pod-template.yaml root@k8s-master1:22:/root","md5Value":"18a1962359617f5fa5ad87af00c91a4a"}
+{"id":0,"createAt":"2020-11-16 09:19:51","content":"kubectl apply -f pod-template.yaml ","md5Value":"621d7389590f17f9b3c7d1a57a501fb8"}
+{"id":0,"createAt":"2020-11-16 09:19:58","content":"kubectl get rs -o wide -n test","md5Value":"f714e20757afca387782a3cdc187922b"}
+{"id":0,"createAt":"2020-11-16 09:20:17","content":"kubectl get pod -o wide -n test","md5Value":"6b078c87473ee77bc3e5f54b3f135545"}
+{"id":0,"createAt":"2020-11-16 09:30:18","content":"kubectl delete pod rs-demo-hssbw rs-demo-n48hd  -n test ","md5Value":"90e3dc9ac3fbb026b31ad15ade083e07"}
+{"id":0,"createAt":"2020-11-16 09:31:17","content":"kubectl get pod -o wide -n test","md5Value":"e1bf19a7b9d9c1fb1a45123bf4677dd1"}
+{"id":0,"createAt":"2020-11-16 09:31:41","content":"kubectl delete pod rs-demo-hssbw rs-demo-n48hd  -n test --show-labels","md5Value":"e6e5a55a0a05f7f7c8e7b81346f72719"}
+{"id":0,"createAt":"2020-11-16 09:31:44","content":"kubectl delete pod rs-demo-hssbw rs-demo-n48hd  -n test --show-label","md5Value":"10d1d12028d72ffab60f91969e6b8a73"}
+{"id":0,"createAt":"2020-11-16 09:31:59","content":"kubectl delete pod rs-demo-hssbw rs-demo-n48hd  -n test --show-lables","md5Value":"1ef6f9a77db5a1b24632512f149198cd"}
+{"id":0,"createAt":"2020-11-16 09:32:34","content":"kubectl delete pod rs-demo-hssbw rs-demo-n48hd  --show-label -n test ","md5Value":"0fc38da214b71e866b6ba0993c9fd52d"}
+{"id":0,"createAt":"2020-11-16 09:32:38","content":"kubectl delete pod rs-demo-hssbw rs-demo-n48hd  --show-labels -n test ","md5Value":"ec8eb19903053342622ede660aad8609"}
+{"id":0,"createAt":"2020-11-16 09:32:49","content":"kubectl delete pod rs-demo-hssbw rs-demo-n48hd  -show-labels -n test ","md5Value":"9ad1aea97af6b8d7f53c7f02e1a86723"}
+{"id":0,"createAt":"2020-11-16 09:33:40","content":"kubectl get pods --show-labels -n test ","md5Value":"080b87a704e43fe5a98432006c4a675b"}
+{"id":0,"createAt":"2020-11-16 09:34:12","content":"kubectl label pod rs-demo-frlhb  app= --overwrite -n test ","md5Value":"b98ae600eff10ebc4bb0f924b3e201d7"}
+{"id":0,"createAt":"2020-11-16 09:36:27","content":"kubectl label pod rs-demo-frlhb  app=rs-demo --overwrite -n test ","md5Value":"c97c757ab1f487f4ffc2e3292717dc3c"}
+{"id":0,"createAt":"2020-11-16 09:37:51","content":"kubectl describe replicaset -n test ","md5Value":"ba44fc3ceb8a9e6f69ec04516c687995"}
+{"id":0,"createAt":"2020-11-16 09:44:04","content":"scp pod-template.yaml root@k8s-master1:22:/root","md5Value":"16728989fe709536220ef76b3e4f7747"}
+{"id":0,"createAt":"2020-11-16 09:44:05","content":"kubectl replace -f pod-template.yaml ","md5Value":"bfd7150ec37a0aefa995212dd2ae3266"}
+{"id":0,"createAt":"2020-11-16 09:47:19","content":"kubectl get pods -n test ","md5Value":"e9a7deaf5de894430916752dc430398e"}
+{"id":0,"createAt":"2020-11-16 09:47:26","content":"kubectl get pods -n test --show-lables ","md5Value":"3f3239809acb68e62917d64196ae44c7"}
+{"id":0,"createAt":"2020-11-16 09:47:35","content":"kubectl get pods -n test --show-labels ","md5Value":"f998e9561a61341b15015f6cde564a10"}
+{"id":0,"createAt":"2020-11-16 09:47:58","content":"kubectl delete pod -l app=rs-demo ","md5Value":"c698ae7276d0ac55388885fbf9f6e2ed"}
+{"id":0,"createAt":"2020-11-16 09:48:13","content":"kubectl delete pod -l app=rs-demo -n test ","md5Value":"feebd8628cdb93440ac338ba3d5fe492"}
+{"id":0,"createAt":"2020-11-16 10:04:34","content":"scp deployment.yaml root@k8s-master1:22:/root","md5Value":"183273a7fedc6d5d78c2c5df1ccc7704"}
+{"id":0,"createAt":"2020-11-16 10:04:35","content":"kubectl apply -f deployment.yaml  ","md5Value":"5e8dec232053d681137d847ddfceb7ce"}
+{"id":0,"createAt":"2020-11-16 10:05:09","content":"scp deployment.yaml root@k8s-master1:22:/root","md5Value":"f84495146878ee787d2c49887b9ff603"}
+{"id":0,"createAt":"2020-11-16 10:05:09","content":"kubectl apply -f deployment.yaml  ","md5Value":"c455f5832bd89de563c44ff60600f450"}
+{"id":0,"createAt":"2020-11-16 10:05:23","content":"scp deployment.yaml root@k8s-master1:22:/root","md5Value":"39ea845c036abc864ca0816489905947"}
+{"id":0,"createAt":"2020-11-16 10:05:23","content":"kubectl apply -f deployment.yaml  ","md5Value":"9c872c00b88a890d5b438c7cc7994b0d"}
+{"id":0,"createAt":"2020-11-16 10:06:05","content":"scp deployment.yaml root@k8s-master1:22:/root","md5Value":"2b789a225d8df1fc1783f3174ca7ad6e"}
+{"id":0,"createAt":"2020-11-16 10:06:06","content":"kubectl delete -f deployment.yaml  ","md5Value":"4ab7cc9dcc040d91e8475d012dd3467b"}
+{"id":0,"createAt":"2020-11-16 10:06:31","content":"scp deployment.yaml root@k8s-master1:22:/root","md5Value":"e479b1ab42103e1e82109321756ed217"}
+{"id":0,"createAt":"2020-11-16 10:06:31","content":"kubectl apply -f deployment.yaml --record ","md5Value":"0dd3855fe0cf9a100d6daa3d83b62122"}
+{"id":0,"createAt":"2020-11-16 10:58:12","content":"scp deployment.yaml root@k8s-master1:22:/root","md5Value":"1a26ea3398ddc5807cb90cc0706bdb33"}
+{"id":0,"createAt":"2020-11-16 10:58:12","content":"kubectl apply -f deployment.yaml --record ","md5Value":"b82b4f9ddd1173fb04cb915713a4afa9"}
+{"id":0,"createAt":"2020-11-16 10:59:23","content":"scp deployment.yaml root@k8s-master1:22:/root","md5Value":"807d378281b106bfffb7360033ac7fb7"}
+{"id":0,"createAt":"2020-11-16 10:59:23","content":"kubectl apply -f deployment.yaml --record ","md5Value":"6d22c4c64ed284a3582df361093657db"}
+{"id":0,"createAt":"2020-11-16 11:03:02","content":"scp deployment.yaml root@k8s-master1:22:/root","md5Value":"a224c15e19d92e157166e761813009a5"}
+{"id":0,"createAt":"2020-11-16 11:03:03","content":"kubectl delete -f deployment.yaml  ","md5Value":"55a3d95b240c753d59bb775157fdce94"}
+{"id":0,"createAt":"2020-11-16 11:03:31","content":"scp deployment.yaml root@k8s-master1:22:/root","md5Value":"6baeb842d4804032d23fa0e92d348626"}
+{"id":0,"createAt":"2020-11-16 11:03:31","content":"kubectl apply -f deployment.yaml --record ","md5Value":"fd351ae8a94cbdaf33568d2eaacbc5f5"}
+{"id":0,"createAt":"2020-11-16 11:16:14","content":"kubectl apply -f daemon.yaml --record ","md5Value":"a0c4a9abc094d5d22f7745107bfc17b2"}
+{"id":0,"createAt":"2020-11-16 11:16:36","content":"kubectl apply -f daemon.yaml --record ","md5Value":"d63cbf6ebdf7e4f64f32f2f9838358d7"}
+{"id":0,"createAt":"2020-11-16 11:16:44","content":"kubectl apply -f daemon.yaml --record ","md5Value":"6cb05516dc8b3957a1345400033f46ea"}
+{"id":0,"createAt":"2020-11-16 11:17:03","content":"scp deamon.yaml root@k8s-master1:22:/root","md5Value":"9a5209d86344911dfd35c2e5be07bd13"}
+{"id":0,"createAt":"2020-11-16 11:17:04","content":"kubectl apply -f deamon.yaml --record ","md5Value":"669d46543e50dd23d55d454cf0a5a020"}
+{"id":0,"createAt":"2020-11-16 11:17:16","content":"scp deamon.yaml root@k8s-master1:22:/root","md5Value":"d515b5e39d8b67310051a1ef2356ff64"}
+{"id":0,"createAt":"2020-11-16 11:17:16","content":"kubectl apply -f deamon.yaml --record ","md5Value":"e4e8fe2bf4dc1944c721725be4c4e9bb"}
+{"id":0,"createAt":"2020-11-16 11:17:36","content":"kubectl get daemonset -n test","md5Value":"3e301f24f34fb0cdf7344200091b6144"}
+{"id":0,"createAt":"2020-11-16 11:17:41","content":"kubectl get daemonset -n test -o wide","md5Value":"8127b115a751ffe4f4a567ab84e369bc"}
+{"id":0,"createAt":"2020-11-16 11:17:50","content":"kubectl get pods -n test -o wide","md5Value":"493155b7ab933a593173316dcc463c1a"}
+{"id":0,"createAt":"2020-11-16 11:18:11","content":"kubectl get rs -n test -o wide","md5Value":"e0092e08c93a84bf3f59020c9e5e52d7"}
+{"id":0,"createAt":"2020-11-16 11:19:01","content":"kubectl get daemonset -n test -o wide","md5Value":"c81f9e5a2e79a933868b25d0b27ab668"}
+{"id":0,"createAt":"2020-11-16 11:19:18","content":"kubectl describe daemonset d-ng -n test ","md5Value":"7aa0edc27ea002bf7000e82081bf60c1"}
+{"id":0,"createAt":"2020-11-16 11:26:49","content":"scp job_one.yaml root@k8s-master1:22:/root","md5Value":"cdbf3a27331521b4219f5f2fd88d4981"}
+{"id":0,"createAt":"2020-11-16 11:26:49","content":"kubectl apply -f job_one.yaml ","md5Value":"6093781e7659ab2c34f0611ee94bf2b5"}
+{"id":0,"createAt":"2020-11-16 11:32:04","content":"scp job_multi.yaml root@k8s-master1:22:/root","md5Value":"dad4369e0f324c8c59ce5e9d64ff3a82"}
+{"id":0,"createAt":"2020-11-16 11:32:05","content":"kubectl apply -f job_multi.yaml ","md5Value":"e188d06df86639f9693e06bfbc59b5ea"}
+{"id":0,"createAt":"2020-11-16 11:32:36","content":"scp job_multi.yaml root@k8s-master1:22:/root","md5Value":"134577ec70831234f969f71e7558621a"}
+{"id":0,"createAt":"2020-11-16 11:32:36","content":"kubectl apply -f job_multi.yaml ","md5Value":"6d686bff5780ab42b971e6c8390549c4"}
+{"id":0,"createAt":"2020-11-16 11:35:21","content":"scp job_multi.yaml root@k8s-master1:22:/root","md5Value":"3a6d6534fe682cb3f5615194e5e4ff64"}
+{"id":0,"createAt":"2020-11-16 11:35:22","content":"kubectl apply -f job_multi.yaml --force ","md5Value":"06a004f2c64ce2df860be62bf613f94a"}
+{"id":0,"createAt":"2020-11-16 11:46:57","content":"scp cron_job2.yaml root@k8s-master1:22:/root","md5Value":"b70ee9d534712f93ed0afcc9121400cf"}
+{"id":0,"createAt":"2020-11-16 11:46:57","content":"kubectl apply -f cron_job2.yaml ","md5Value":"2d16a87e749b49ede4b8ac8e0d8b95db"}
+{"id":0,"createAt":"2020-11-16 11:47:14","content":"scp cron_job2.yaml root@k8s-master1:22:/root","md5Value":"bec2f2ce61d10a4c82f92f34dc23249c"}
+{"id":0,"createAt":"2020-11-16 11:47:14","content":"kubectl apply -f cron_job2.yaml ","md5Value":"07f8af76fdf635a99b0f8dcd4ea590eb"}
+{"id":0,"createAt":"2020-11-16 11:48:41","content":"scp cron_job2.yaml root@k8s-master1:22:/root","md5Value":"0a1d0af36537fe853b2c9d4d9a3ad8c1"}
+{"id":0,"createAt":"2020-11-16 11:48:42","content":"kubectl apply -f cron_job2.yaml ","md5Value":"d660442c7e4320dfb9ae53689398169b"}
+{"id":0,"createAt":"2020-11-16 11:49:18","content":"scp cron_job2.yaml root@k8s-master1:22:/root","md5Value":"205cac7b188450475bdec593edc5eca1"}
+{"id":0,"createAt":"2020-11-16 11:49:18","content":"kubectl apply -f cron_job2.yaml ","md5Value":"2ce4afdc29b38b9382958df6843ecea9"}
+{"id":0,"createAt":"2020-11-16 11:49:32","content":"scp cron_job2.yaml root@k8s-master1:22:/root","md5Value":"9f9f336e03b7cae2448de67546b26e42"}
+{"id":0,"createAt":"2020-11-16 11:49:32","content":"kubectl apply -f cron_job2.yaml ","md5Value":"f1cb03b3b6c499f427a077b229d7c850"}
+{"id":0,"createAt":"2020-11-18 08:38:21","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"aec07a75d1e3f9f84d10891b9ce305b2"}
+{"id":0,"createAt":"2020-11-18 08:38:21","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"5e3e3fb83264696e6478f943d373ec87"}
+{"id":0,"createAt":"2020-11-18 08:38:38","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"74d581316bf82728026c8aae04534ab2"}
+{"id":0,"createAt":"2020-11-18 08:38:38","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"49cfd2e10b7bf6c13789c447f54108a6"}
+{"id":0,"createAt":"2020-11-18 08:38:54","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"9ad77f5fbf150b2c006ff1d114d3c32b"}
+{"id":0,"createAt":"2020-11-18 08:38:54","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"ccbe63db69348f3cb4bd9014c4e9a90e"}
+{"id":0,"createAt":"2020-11-18 08:39:12","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"c5043e8a36e79168a454ff6f3dfe5cf4"}
+{"id":0,"createAt":"2020-11-18 08:39:12","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"5cc02151d4637600479477df3c515023"}
+{"id":0,"createAt":"2020-11-18 08:39:33","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"371ce4b3f368f3c090c6217a02b999cf"}
+{"id":0,"createAt":"2020-11-18 08:39:34","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"ff8376a585a54f655ee1a055763369aa"}
+{"id":0,"createAt":"2020-11-18 08:43:38","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"36ee368d931c93d28d82ee13979caa1f"}
+{"id":0,"createAt":"2020-11-18 08:43:40","content":"kubectl delete -f nginx-pod-svc.test.yaml","md5Value":"00d68a995c81e4cb8007058f29ade16d"}
+{"id":0,"createAt":"2020-11-18 08:44:44","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"a76da8070715239939437cc7f139dfbe"}
+{"id":0,"createAt":"2020-11-18 08:44:45","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"9ad90eef7d61bee04904b1ac07fd9168"}
+{"id":0,"createAt":"2020-11-18 08:45:08","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"8fe85cf8a6b7709e234f0d072a38e22c"}
+{"id":0,"createAt":"2020-11-18 08:45:10","content":"kubectl delete -f nginx-pod-svc.test.yaml","md5Value":"b229106fc1517dc148a98cf9c0bbed9e"}
+{"id":0,"createAt":"2020-11-18 08:46:12","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"ff03f29ea348c8aff764fbf1cccbc138"}
+{"id":0,"createAt":"2020-11-18 08:46:13","content":"kubectl delete -f nginx-pod-svc.test.yaml","md5Value":"e27220bee6eea39a83713ccf036c0da0"}
+{"id":0,"createAt":"2020-11-18 08:46:15","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"6333a16858ffa63aa36d07e927ed90e1"}
+{"id":0,"createAt":"2020-11-18 08:46:15","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"dac6191ea7b552398cfc4b91a07f853c"}
+{"id":0,"createAt":"2020-11-18 08:50:33","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"17cdd6b035c67e795ed1d9308c33de08"}
+{"id":0,"createAt":"2020-11-18 08:50:34","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"46c22e7b2a48ee58a837ef80dceee530"}
+{"id":0,"createAt":"2020-11-18 09:04:45","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"addc977be20aeb51d22fdcea7b39b263"}
+{"id":0,"createAt":"2020-11-18 09:04:45","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"e03d3585ae83b0e8938fc3812574824c"}
+{"id":0,"createAt":"2020-11-18 09:24:38","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"cfeacdb5384be52214bd1d52dc69def4"}
+{"id":0,"createAt":"2020-11-18 09:24:38","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"609e253e8678ab9cb82895ffe2e59130"}
+{"id":0,"createAt":"2020-11-18 09:28:20","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"820ef73cfb3acadc2554c1f0c05bc7a7"}
+{"id":0,"createAt":"2020-11-18 09:28:21","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"b7d896066997856941eee5ad0ad62f7d"}
+{"id":0,"createAt":"2020-11-18 09:31:36","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"9c1839bdab7549e738c2d42d0b67acc4"}
+{"id":0,"createAt":"2020-11-18 09:31:38","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"2170e2b541f7acec0b75cab400e5fac9"}
+{"id":0,"createAt":"2020-11-18 09:32:43","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"752a625fc0aa34dc686ad5f4ed278411"}
+{"id":0,"createAt":"2020-11-18 09:32:44","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"10ef948b081285a667c4a8506cf2a174"}
+{"id":0,"createAt":"2020-11-18 09:37:03","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"9a7a4a1d0349bf663b6c2190eb4f8859"}
+{"id":0,"createAt":"2020-11-18 09:37:03","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"5d951255f34fef48fd022bff1228c14e"}
+{"id":0,"createAt":"2020-11-18 09:37:25","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"6a1d5ddbaa179f53724023797bc0a07f"}
+{"id":0,"createAt":"2020-11-18 09:37:25","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"8b1e45c8056154269b556dbf8bf5c8bf"}
+{"id":0,"createAt":"2020-11-18 09:43:14","content":"scp nginx-pod-svc.test.yaml root@k8s-master1:22:/root","md5Value":"2a7196b08fd568067f429496e8c9876e"}
+{"id":0,"createAt":"2020-11-18 09:43:14","content":"kubectl apply -f nginx-pod-svc.test.yaml","md5Value":"4f02b4dc1a0d85d90182219adbd4640a"}
+{"id":0,"createAt":"2020-11-18 10:18:38","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"9d54276ef61a761aee00ff57f5f5d011"}
+{"id":0,"createAt":"2020-11-18 10:18:39","content":"kubectl apply -f ingress-controller.yaml ","md5Value":"d8986b3e2ffa21a0d0a19bb2f64c001a"}
+{"id":0,"createAt":"2020-11-19 09:16:49","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"ebaf4a13e43f9c604e53cf1230abb42a"}
+{"id":0,"createAt":"2020-11-19 09:16:54","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"eec29e736e7bc4df3dabe94869612b72"}
+{"id":0,"createAt":"2020-11-19 09:18:53","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"385caf501316b270c50cf74acb64a996"}
+{"id":0,"createAt":"2020-11-19 09:18:54","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"dbdd6fd6d41d679da9204c23cbd6d38b"}
+{"id":0,"createAt":"2020-11-19 09:19:50","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"e86a2765ee90bda3e0d40b215de25eb5"}
+{"id":0,"createAt":"2020-11-19 09:19:50","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"da0182e43885a6fd8ddf40f06479b2fe"}
+{"id":0,"createAt":"2020-11-19 09:20:59","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"71d26994cb8a4e4f5bb97fb8babd2426"}
+{"id":0,"createAt":"2020-11-19 09:21:00","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"10b807ce6742ca3f95a4bfacd1cf03ed"}
+{"id":0,"createAt":"2020-11-19 09:21:50","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"039f6cd5bb9b147164b3b5b910033c48"}
+{"id":0,"createAt":"2020-11-19 09:21:51","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"298bf86d4cd3c387144dbdf962869ca2"}
+{"id":0,"createAt":"2020-11-19 09:26:03","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"d6a6e36264d01d38cf1827e70befd4c1"}
+{"id":0,"createAt":"2020-11-19 09:26:04","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"b82166c158b0f7cf3f0e0deed19a486c"}
+{"id":0,"createAt":"2020-11-19 09:27:44","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"6620fb550cfd555cbc9e0af052ac1da2"}
+{"id":0,"createAt":"2020-11-19 09:27:45","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"9563369e5b268b4993cd34e17f976459"}
+{"id":0,"createAt":"2020-11-19 09:28:11","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"ee2463fcfa9c4af42daa12929bb541fd"}
+{"id":0,"createAt":"2020-11-19 09:28:13","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"4141cd2d246018917016a49dbc345559"}
+{"id":0,"createAt":"2020-11-19 09:32:24","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"b89f4db77b2b4b7973675ff5f1c4f32b"}
+{"id":0,"createAt":"2020-11-19 09:32:26","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"0a52d90b40e654a0826e88e8377f8d24"}
+{"id":0,"createAt":"2020-11-19 09:38:05","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"2a24a163ece1ba38ce132e293a62d5bb"}
+{"id":0,"createAt":"2020-11-19 09:38:06","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"2ad04f416f1e67f858b353f71b5ca2b3"}
+{"id":0,"createAt":"2020-11-19 09:38:10","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"f7455630a0e7de30600c851c587c4d34"}
+{"id":0,"createAt":"2020-11-19 09:38:11","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"f0d6f7cc9eccd2bff7f72dcaa205c7bc"}
+{"id":0,"createAt":"2020-11-19 09:38:42","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"d51f735a698fdcf94bd74d574d5f774d"}
+{"id":0,"createAt":"2020-11-19 09:38:43","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"788151d1e623d88c6854ee700a71f7f4"}
+{"id":0,"createAt":"2020-11-19 09:53:16","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"2933d11394fc2343cff85e0a74b048fd"}
+{"id":0,"createAt":"2020-11-19 09:53:17","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"4c0930b3a7d39392800446853aeb2f5c"}
+{"id":0,"createAt":"2020-11-19 09:58:55","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"93b8984293c5e12ba2d87465cf92f373"}
+{"id":0,"createAt":"2020-11-19 09:58:56","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"6f804a7a2f2139b40297d486d888b63f"}
+{"id":0,"createAt":"2020-11-19 10:03:56","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"dda52515e01275f7b4c641a65577934e"}
+{"id":0,"createAt":"2020-11-19 10:03:57","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"e1938e898eb5245eb23dda1f603984f9"}
+{"id":0,"createAt":"2020-11-19 10:04:17","content":"scp ingress-controller.yaml root@k8s-master1:22:/root","md5Value":"c22973c904b57971714dc50641633412"}
+{"id":0,"createAt":"2020-11-19 10:04:19","content":"kubectl apply -f ingress-controller.yaml  ","md5Value":"371b6a4b26092f6e1e8442091b9fb098"}
+{"id":0,"createAt":"2020-11-19 10:36:27","content":"kubectl delete -f ingress-controller.yaml  ","md5Value":"9022b0dd5e6236682469fcf4a5a0586a"}

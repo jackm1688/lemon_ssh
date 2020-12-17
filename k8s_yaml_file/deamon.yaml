@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: d-ng
+  namespace: test
+spec:
+  selector:
+    matchLabels:
+      app: d-ng
+  template:
+    metadata:
+      labels:
+        app: d-ng
+      name: d-ng  
+    spec:
+      containers:
+        - name: d-ng
+          image: gdsz.harbor.com/experimental_images/nginx:v1
+          ports:
+            - name: http
+              containerPort: 80
+          env:
+            - name: USER_NAME
+              value: jack
+      

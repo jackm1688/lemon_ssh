@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: httpd-web
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      run: httpd-web
+  template:
+    metadata:
+      labels:
+        run: httpd-web
+    spec:
+      containers:
+        - name: httpd-web
+          image: gdsz.harbor.com/experimental_images/httpd:latest
+          ports:
+            - containerPort: 80
+          readinessProbe:
+            httpGet:
+              scheme: HTTP
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 5
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: httpd-web-svc
+spec:
+  selector:
+    run: httpd-web
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 80
