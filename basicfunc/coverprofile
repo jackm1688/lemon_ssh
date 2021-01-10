@@ -1,0 +1,8 @@
+mode: set
+lemon_ssh/basicfunc/basicfunc.go:3.33,5.9 1 1
+lemon_ssh/basicfunc/basicfunc.go:6.18,7.13 1 1
+lemon_ssh/basicfunc/basicfunc.go:8.19,9.13 1 0
+lemon_ssh/basicfunc/basicfunc.go:10.19,11.13 1 0
+lemon_ssh/basicfunc/basicfunc.go:12.19,13.13 1 0
+lemon_ssh/basicfunc/basicfunc.go:14.10,15.21 1 0
+lemon_ssh/basicfunc/basicfunc.go:19.30,21.2 1 1

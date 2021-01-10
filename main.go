@@ -22,6 +22,11 @@ const (
 	MAXSIZE           = 2000
 )
 
+//创建存储历史记录的目录
+func init(){
+	_= os.Mkdir("./history",0755)
+}
+
 var (
 	run      string
 	user     string

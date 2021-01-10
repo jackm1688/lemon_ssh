@@ -1,7 +1,7 @@
 package mlemon
 
 import (
-	"mlemon_ssh/model"
+	"lemon_ssh/model"
 	"testing"
 )
 
